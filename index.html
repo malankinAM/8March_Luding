@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> March 8 colleagues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio  id="song" >
+    <source src="./Justin Petti feat. Harley Bird & Alina Aslanian - My Love (supermusic.me).mp3">
+  </audio>
+   
+<div class="container">
+    
+    <div class="set">
+        <div class=""><img src="./gratis-png-petalo-de-rosa-thumbnail-removebg-preview.png" alt=""></div>
+        <div class=""><img src="./petal.png" alt=""></div>
+        <div class=""><img src="./images-removebg-preview.png" alt=""></div>
+        <div class=""><img src="./gratis-png-petalo-de-rosa-thumbnail-removebg-preview.png" alt=""></div>
+        <div class=""><img src="./images-removebg-preview.png" alt=""></div>
+        <div class=""><img src="./petal.png" alt=""></div>
+        <div class=""><img src="./images-removebg-preview.png" alt=""></div>
+        <div class=""><img src="./petal.png" alt=""></div>
+        
+    </div>
+  
+    <div class="slider">
+
+
+
+        <div class="slides" style="--img: url('Desktop - 5 (1).png')">
+            <div class="content">
+                <h2>ОКСАНА</h2>
+                <p>alaska.alex.agp@gmail.com</p>
+             
+            </div>
+        </div>
+        <div class="slides" style="--img: url('Desktop - 4.png')">
+            <div class="content">
+                <h2> ОЛЬГА</h2>
+               <p>alaska.alex.agp@gmail.com</p>
+            </div>
+        </div>
+        <div class="slides" style="--img: url('Desktop - 1 (3).png')">
+            <div class="content">
+                <h2>ЕВГЕНИЯ</h2>
+                <p>alaska.alex.agp@gmail.com</p>
+            </div>
+        </div>
+        <div class="slides" style="--img: url('Desktop - 3.png')">
+            <div class="content">
+                <h2>АЛИНА</h2>
+                <p>alaska.alex.agp@gmail.com</p>
+            </div>
+        </div>
+        <div class="slides" style="--img: url('Desktop - 2.png')">
+            <div class="content">
+                <h2> ЭЛЯ</h2>
+                <p>alaska.alex.agp@gmail.com</p>
+            </div>
+        </div>
+         <div class="slides" style="--img: url('Desktop - 6.png')">
+            <div class="content">
+                <h2>АННА</h2>
+                <p>alaska.alex.agp@gmail.com</p>
+            </div>
+        </div>
+       
+        <div class="slides" style="--img: url('Desktop - 7.png')">
+            <div class="content">
+                <h2>АЛЕНА</h2>
+                <p>alaska.alex.agp@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="slides" style="--img: url('Desktop - 8.png')">
+            <div class="content">
+                <h2>ИРИНА</h2>
+                <p>alaska.alex.agp@gmail.com</p>
+            </div>
+        </div> 
+
+       
+    </div>
+
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+     
+</div>
+
+
+
+<script>
+
+window.addEventListener('click',() => {
+    document.getElementById("song").play();
+});
+
+
+
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
+let slider = document.querySelector('.slider');
+
+next.addEventListener('click',function(){
+    let slides = document.querySelectorAll('.slides');
+    slider.appendChild(slides[0]);
+})
+
+prev.addEventListener('click',function(){
+    let slides = document.querySelectorAll('.slides');
+    slider.prepend(slides[slides.length -1]);
+})
+   
+</script>
+
+</body>
+</html>
